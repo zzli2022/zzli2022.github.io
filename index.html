@@ -1,171 +1,646 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE HTML>
+<html lang="en">
+
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="bookmark" href="favicon.ico" type="image/x-icon"　/>
-<title>Zhongzhi, Li(李忠志)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Zhongzhi Li (李忠志)</title>
+  <meta name="author" content="Zhongzhi Li">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/jpg" href="images/cv.jpg">
+
+  <style>
+    /* General Styles for the Table */
+    table {
+      width: 100%;
+      max-width: 800px;
+      border: 0px;
+      border-spacing: 0px;
+      border-collapse: separate;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    /* Button Styles */
+    .expand-btn {
+      cursor: pointer;
+      color: #007BFF;
+      text-decoration: none;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-right: 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .expand-btn:hover {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    /* Style for the headings */
+    heading {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* Default content visibility - hidden for non-default sections */
+    .collapsed {
+      display: none;
+    }
+
+    .publication-content {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    .publication-group {
+      margin-top: 20px;
+    }
+
+    .publication-group-header {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    /* Style for publication details section */
+    .publication-content p {
+      margin-left: 20px;
+    }
+
+    .publication-content a {
+      color: #007BFF;
+    }
+
+    .publication-content a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
+
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Menu</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="https://scholar.google.com/citations?hl=zh-CN&user=wmaFBB8AAAAJ&view_op=list_works&gmla=AILGF5VZGzlvg7KWpgPsP9gYYntVWry1lT5NUfZgxCPLI6AMhtV_zWym2UuHYys39tnwv_dZR3RhFgAqJclcW9DXPNjjeU1R9kf0RrRZuhsKegrpQOvM9L1NoOLxSJM0vaSyrcF-">Google Scholar</a></div>
-<div class="menu-item"><a href="https://github.com/zzli2022">GitHub</a></div>
-<!--
-<div class="menu-item"><a href="https://www.researchgate.net/profile/Xiuze-Zhou">ResearchGate</a></div>
-<div class="menu-item"><a href="http://snailwish.com/">个人博客</a></div>
--->
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Li, Zhongzhi (李忠志) </h1>
-</div>
-<table class="imgtable"><tr><td>
-<a href="https://zzli2022.github.io/"><img src="photos/cv.jpg" alt="alt text" width="131px" height="160px" /></a>&nbsp;</td>
-<td align="left"><p><b>Phd Student</b> <br />
-AI Institute, Chinese Academy of Sciences. <br />
-Beijing, China <br /> 
-E-mail: <a href="mailto:lizhongzhi2022@ia.ac.cn">lizhongzhi2022@ia.ac.cn</a></p>
-</td></tr></table>
-<h2>About me</h2>
-<p>I received the B.S. degree from the Northeastern University, in 2018.<br />
-I am currently a Phd Student, supervised by Professor <a href="https://scholar.google.com/citations?user=8r3y8IMAAAAJ&hl=en"><i>Cheng-Lin Liu</i></a>(IEEE/IAPR/CAAI Fellow) in the AI Institute, Chinese Academy of Sciences.<br />
-I focus on using AI to solve practical problems. My main research interests include <b>Large Language Model of NLP</b> and <b>Mathematical Reasoning</b>. Also, I do some research of <b>CV</b>, such as MLLM/Neural-Symbolic Learning. </p>
-<h2>Research</h2>
-<p>My research interests include: </p>
-<ul>
-<li><p>Large Language Model of NLP</p>
-</li>
-<li><p>Mathematical Reasoning</p>
-</li>
-<li><p>Multi-modal Learning</p>
-</li>
-<li><p>Neural-Symbolic Learning</p>
-</li>
-</li>
-</ul>
-<h3>Current Work</h3>
-<ol>
-<li><p><b>Z. Li</b>* , M. Zhang, F. Yin, C. Liu et al. "CMMaTH: A Chinese Multi-modal Math Skill Evaluation Benchmark for Foundation Models". <b><i>COLING2024</i></b>(CCF-B) <a href="https://arxiv.org/abs/2311.16476">https://arxiv.org/abs/2311.16476</a>. Pending Paper.</p>
-</li>
-<li><p><b>Z. Li</b>* , M. Zhang, F. Yin, C. Liu. "LANS: A Layout-Aware Neural Solver for Plane Geometry Problem". <b><i>ACL2024</i></b>(CCF-A)
-<a href="https://arxiv.org/abs/2311.16476">https://arxiv.org/abs/2311.16476</a>.</p>
-</li>
-<li><p><b>J. Zhang*, Z. Li*</b>, M. Zhang, F. Yin, C. Liu. "GeoEval: A Diverse and Scalable Benchmark for Large Language Models in Geometric Problem Understanding". <b><i>ACL2024</i></b>(CCF-A).
-<a href="https://arxiv.org/abs/2402.10104">https://arxiv.org/abs/2402.10104</a>.</p>
-<li><p>R. Zhang, J. Hu, <b>Z. L</b>, C. Liu et al. "FGPR: A Large-Scale Dataset for Fine-Grained Product Retrieval."<b><i>NeurIPS2024</i></b>(CCF-A) Pending Paper
-  .</p>
-</li>
-<li><p>M. Zhang, <b>Z. Li</b>, F. Yin, C. Liu. "Fusion, Reason and Verifiy: Solving Geometry Problem with Parsed Clause from Diagram."  <b><i>Artificial Intelligence</i></b>(CCF-A)</p>
-</ol>
-<p><b>Note</b>: * indicates the first author.</p>
+  <table
+    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <p style="text-align:center">
+                    <name>Zhongzhi Li (李忠志)</name>
+                  </p>
 
-<h3>Academic service</h3>
-<p><b>Reviewer</b></p>
-<ul>
-<li><p>IEEE Conference on Computer Vision and Pattern Recognition</p>
-</li>  
-</ul>
+                  <p align="justify">
+My name is Zhongzhi Li, and I am a Ph.D student in AI4Math and LLM Reasoning at <a href="https://mbzuai.ac.ae/" target="_blank" rel="noopener">CASIA</a>. I pursuing my Ph.D in Artificial Intelligence from the <a href="http://english.ia.cas.cn/" target="_blank" rel="noopener">Institute of Automation, Chinese Academy of Sciences (CASIA)</a>, under the supervision of IEEE/CAAI/CAA/IAPR Fellow, <a href="https://nlpr.ia.ac.cn/liucl" target="_blank" rel="noopener">Chenglin Liu</a>
 
-<h2>Education</h2>
-<p>Ph.D., Pattern Recognition and Intelligent Systems, <a href="http://www.ia.cas.cn/">Institute of Automation, Chinese Academy of Sciences</a>, 06.2022</p>
-<ul>
-<li><p>Awards: Principal Level Scholarship (1st in admission)</p>
-</li>
-<li><p>Main Courses: Machine Learning, Neural Networks, Digital Image Processing, Pattern Recognition, Advanced Artificial Intelligent.</p>
-</li>
-</ul>
-<p>B.E., Math, <a href="https://www.neu.edu.cn/">Northeastern University</a>, 06.2018</p>
-<ul>
-<li><p>GPA: 91.6/100, Rank: 1/160</p>
-</li>
-<li><p>Awards: Northeastern University Comprehensive First Prize Scholarship(top1.5%), Innovation and Entrepreneurship Scholarship(top5%), National College Student Computer Design Competition Third Prize, International College Student Mathematical Modeling Competition Second Prize</p>
-</li>
-<li><p>Main Courses: C Programming, Computer Network and Communication, Real Variable Functions, Mathematical Analysis, Mathematical Modeling, Machine Learning</p>
-</li>
-</ul>
-<h2>Work experience</h2>
-<ol>
+                  <p align="justify">
+                 My past research focused on LLM Reasoning in Math, Code and Neural-Symbolic Systems, Brain-Inspired System-2 Intelligence, and Continual Learning in LLM Reasoning. Currently, I am exploring System-2 Reasoning in (Multimodal) LLMs, LLM Agents, and LRM4Science, with applications in fields like Math, Code, Medicine, and beyond.
+                  </p>
 
-<li><p>Research Intern, AGI Group,  RED Inc., 06.2024-Present</p></li>
-<ul>
-  <li><p>Hallucination detection in multi-modal large models, model alignment, and efficient reasoning.</p>
-  </li>
-  <li><p>Unified generation and understanding in multi-modal large models.</p>
-  </li>
-</ul>
+                  <p align="justify">
+                    I closely collaborate with <a href="https://nlpr.ia.ac.cn/liucl/" target="_blank" rel="noopener">Zhijiang Guo</a> in HKUST, <a href="https://bladedancer957.github.io/" target="_blank" rel="noopener">Duzhen Zhang</a> in MBZUAI, <a href="https://mastervito.github.io/" target="_blank" rel="noopener">Xiao Liang</a> in UCLA, <a href="https://xiaoliunlc.github.io" target="_blank" rel="noopener">Xiao Liu</a> in MSRA.
+                  </p>
 
-<li><p>Research Intern, AI Research Lab, TAL, 01.2024-05.2024</p></li>
-<ul>
-  <li><p>Development of a General Multimodal Multilingual Mathematical Reasoning Benchmark and Multimodal Mathematical Base Model.</p>
-  </li>
-  <li><p>Constructing the Multimodal Mathematical Benchmark-CMMaTH.</p>
-  </li>
-</ul>
-
-<li><p>Research Intern, WPS-AI, Kingsoft, 11.2023-01.2024</p></li>
-<ul>
-  <li><p>Development of Document Multimodal Large-scale Models and WPS-AI Question-Answering Models.</p>
-  </li>
-  <li><p>Research and development of WPS-AI reading and parsing middleware based on LayoutReader, improving WPS-AI performance by 3.7% on the TAT-DQA Benchmark; Fine-tuning Qwen-VL performance on complex form images based on rendering synthesis strategy.</p>
-  </li>
-</ul>
-
-<li><p>Research Intern, AI Research Institute, MEGVII, 06.2019-Present</p></li>
-<ul>
-<li><p>Video Structural Analysis and Multi-Object Tracking Algorithm Research.</p>
-</li>
-<li><p>Constructing a motion pattern anomaly detector based on multimodal information using pedestrian motion characteristics, achieving a 2.3-point improvement on MOT17.</p>
-</li>
-</ul>
-</ol>
+                  <p align="justify">
+                    I am looking for <font color="red"><strong>cooperation</strong></font>. Contact me if you are interested in the above topics.
+                  </p>
 
 
-<h3>Academic Activities.</h3>
-<p><b>Presentation</b></p>
-<ul>
-  <li><p>CGIS Academic Salon Presenter on 'Geometric Models and Inference in Document Images', China Society of Image and Graphics(CSIG)</p>
-  </li>  
-</ul>
-
-<ul>
-  <li><p>Presenter of <i>Frontiers Workshop on Document and Multimodal Intelligence</i>, China Society of Image and Graphics(CSIG)</p>
-  </li>  
-</ul>
-
-<p><b>Scholarship</b></p>
-<ul>
-<li><p>Outstanding PhD Student Program of Institute of Automation, Chinese Academy of Sciences.</p>
-</li>  
-</ul>
-
-<ul>
-  <li><p>Academic Scholarship of the University of Chinese Academy of Sciences.</p>
-  </li>  
-</ul>
-
-<ul>
-  <li><p>First-Class Scholarship of Northeastern University.</p>
-  </li>  
-</ul>
+                  <p style="text-align:center">
+                    <a href="mailto:lizhongzhi2022@ia.ac.cn">Email</a> &nbsp/&nbsp
+                    <a href="https://scholar.google.com/citations?hl=zh-CN&user=wmaFBB8AAAAJ&view_op=list_works&gmla=AILGF5VZGzlvg7KWpgPsP9gYYntVWry1lT5NUfZgxCPLI6AMhtV_zWym2UuHYys39tnwv_dZR3RhFgAqJclcW9DXPNjjeU1R9kf0RrRZuhsKegrpQOvM9L1NoOLxSJM0vaSyrcF-">Google Scholar</a>
+                    &nbsp/&nbsp
+                    <a href="https://github.com/zzli2022"> GitHub </a> 
+ <!--                    &nbsp/&nbsp -->
+              <!--       <a href="docs/DuzhenZhang_CV.pdf"> Resumé</a> -->
+                  </p>
+                </td>
+                <td style="padding:2.5%;width:40%;max-width:40%">
+                  <a href="#"><img style="width:80%;max-width:80%" alt="profile photo" src="images/cv.jpg"
+                      class="hoverZoomLink"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
 
-<ul>
-  <li><p>Innovation and Entrepreneurship Scholarship of Northeastern University.</p>
-  </li>  
-</ul>
+          <table align="center" border="0" cellpadding="10" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td valign="middle" width="100%">
+                  <heading>News </heading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+            <!-- Modified section with collapsible list -->
+          <ul>
+            <!-- Latest 10 items (always visible) -->
+            <li><span style="color: gray" size="6px">[2025.05]</span> 📣 Welcome to follow our latest survey on: <a href="https://arxiv.org/pdf/2504.17704?"><strong>LLM Reasoning Safety</strong></a></li>
+            <li><span style="color: gray" size="6px">[2025.05]</span> 📣 Welcome to follow our latest work on Reinforced Multimodal LLM Reasoning: <a href=""><strong>PeRL</strong></a></li>
+            <li><span style="color: gray" size="6px">[2025.05]</span> 📣 Welcome to follow our latest work on Synthetic Reinforced LLM Reasoning: <a href=""><strong>SwS</strong></a></li>
+            <li><span style="color: gray" size="6px">[2025.05]</span> 📣 Welcome to follow our latest work on Efficient System-2 LLM Reasoning: <a href="https://arxiv.org/abs/2502.17419"><strong>TLDR</strong></a></li>
+            <li><span style="color: gray" size="6px">[2025.05]</span> 🎉 Two papers: <a href=""><strong>BranchLoRA</strong></a>, and <a href="https://arxiv.org/abs/2502.12988"><strong>LongDocURL</strong></a> are accepted by <strong>ACL2025</strong>. See you in Vienna!</li>
+            <li><span style="color: gray" size="6px">[2025.03]</span> 🎉 One paper: <a href="https://arxiv.org/abs/2502.20808"><strong>MV-MATH</strong></a> is accepted by <strong>CVPR2025</strong>.</li>
+            <li><span style="color: gray" size="6px">[2025.02]</span> 📣 Welcome to follow our latest survey on <a href="https://arxiv.org/abs/2502.17419"><strong>LLM Reasoning</strong></a>.</li>
+            <li><span style="color: gray" size="6px">[2025.02]</span> 📣 Welcome to follow our latest techniques report on R1-like model <a href="https://arxiv.org/abs/2501.11284"><strong>RedStar</strong></a>.</li>
+            <li><span style="color: gray" size="6px">[2024.11]</span> 🎉 One papers: <a href="https://aclanthology.org/2024.findings-acl.738/"><strong>CMMaTH</strong></a> are accepted by <strong>COLING2025</strong>. See you in Abu Dhabi!</li>
+            <li><span style="color: gray" size="6px">[2024.05]</span> 🎉 Two paper: <a href="https://proceedings.mlr.press/v235/xu24p.html"><strong>LANS</strong></a> and <a href="https://aclanthology.org/2024.findings-acl.79/"><strong>GeoEval</strong></a> are accepted by <strong>ACL2024</strong>. See you in Bangkok!</li>
+         
+            <!-- Button to Toggle Collapse -->
+            <button id="expand-btn" class="expand-btn">Show All</button>
+          </ul>
+
+          <script>
+            document.getElementById('expand-btn').addEventListener('click', function() {
+                const collapsedItems = document.getElementById('collapsed-items');
+                const expandBtn = document.getElementById('expand-btn');
+                if (collapsedItems.classList.contains('collapsed')) {
+                    collapsedItems.classList.remove('collapsed');
+                    expandBtn.textContent = 'Show Less';
+                } else {
+                    collapsedItems.classList.add('collapsed');
+                    expandBtn.textContent = 'Show All';
+                }
+            });
+          </script>
+
+          <table align="center" border="0" cellpadding="10" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td valign="middle" width="100%">
+                  <heading>Research Overview </heading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+  
+          <ul>
+               <li>
+                  <strong>Brain­-inspired Intelligence, System-2 Reasoning:</strong>
+                  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/19879">[Preprint-ManipLVM-R1]</a>
+                  <a href="https://www.ijcai.org/proceedings/2022/790">[Preprint-PeRL]</a>,
+                  <a href="https://www.ijcai.org/proceedings/2022/790">[Preprint-SwS]</a>,
+                  <a href="https://www.ijcai.org/proceedings/2022/790">[Preprint-TLDR]</a>,
+                  <a href="https://arxiv.org/abs/2502.17419">[Preprint-SoliGeo]</a>,
+                  <a href="https://arxiv.org/pdf/2504.17704?">[LLM Reasoning Safety Survey]</a>, 
+                  <a href="https://arxiv.org/pdf/2504.17704?">[System-2 Reasoning Survey]</a>,
+                  <a href="https://arxiv.org/abs/2501.11284">[Tech Report]</a>
+               </li>
+
+              <li>
+                  <strong>Continual Learning in LLMs Reasoning:</strong>
+                  <a href="https://openreview.net/forum?id=O4RCFjVUBJ">[ACL2025]</a>.
+                  <a href="https://arxiv.org/abs/2505.11942">[Preprint-LifelongAgentBench]</a>.
+              </li>
+
+              <li>
+                <strong>Multimodal Learning, Multimodal LLMs:</strong>
+                <a href="https://proceedings.mlr.press/v235/xu24p.html">[ACL 2024]</a>
+                <a href="https://aclanthology.org/2024.findings-acl.79/">[ACL 2024]</a>
+                <a href="https://arxiv.org/abs/2502.12988">[ACL 2025]</a>
+                <a href="https://arxiv.org/abs/2502.20808">[CVPR 2025]</a>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547776">[Preprint-PeRL]</a>
+              </li>
+          </ul>
 
 
-<p><br />
-<a href="cv/cv_0827.pdf">A brief cv</a>.</p>
-</td>
-</tr>
-</table>
+
+
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>Publications</heading>
+                  <p align="justify"><strong>* denotes equal contribution and # denotes the corresponding author.</strong></p>
+                </td>
+         
+              </tr>
+            </tbody>
+      
+          </table>
+
+          <!-- Add buttons to toggle between categories -->
+        <div style="text-align:center; margin-bottom: 20px;">
+          <button class="expand-btn" onclick="toggleVisibility('categoryA')">Main Author</button>
+          <button class="expand-btn" onclick="toggleVisibility('categoryC')">Other Author</button>
+        </div>
+                 
+
+        <div id="categoryA" class="publication-content">
+
+            <h3 style="margin-left:25px; margin-top:10px;">Conference Paper</h3>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
+
+               <tr>
+                <td style="padding:25px;width:35%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/system_2_lrm_survey.jpg' width="250">
+                  </div>
+                </td>
+                <td style="padding:25px;width:70%;vertical-align:middle">
+                  <a href="">
+                    <papertitle>From System 1 to System 2: A Survey of Reasoning Large Language Models</papertitle>
+                  </a>
+                  <br /><br />
+                    <strong>Zhong-Zhi Li*</strong>,
+                  Du-Zhen Zhang*,
+                  Ming-Liang Zhang,
+                  Jiaxin Zhang,
+                  Zengyan Liu,
+                  Yuxuan Yao,
+                  Haotian Xu,
+                  Junhao Zheng,
+                  Xiuyi Chen,
+                  Yingying Zhang,
+                  Fei Yin,
+                  Jiahua Dong,
+                  Zhijiang Guo#,
+                  Le Song#,
+                  Cheng-Lin Liu#
+                  <br /><br />
+              <!--     <strong>Preprint Under Review, Survey</strong> -->
+                  <strong>Preprint Under Review.</strong>
+                  <br>
+                  <a href="https://arxiv.org/abs/2502.17419">Paper</a>&nbsp/&nbsp
+                  <a href="https://github.com/zzli2022/Awesome-System2-Reasoning-LLM">Code</a>
+                  <details align="justify">
+                    <summary>
+                      Details
+                    </summary>
+                Achieving human-level intelligence requires refining the transition from the fast, intuitive System 1 to the slower, more deliberate System 2 reasoning. While System 1 excels in quick, heuristic decisions, System 2 relies on logical reasoning for more accurate judgments and reduced biases. Foundational Large Language Models (LLMs) excel at fast decision-making but lack the depth for complex reasoning, as they have not yet fully embraced the step-by-step analysis characteristic of true System 2 thinking. Recently, reasoning LLMs like OpenAI's o1/o3 and DeepSeek's R1 have demonstrated expert-level performance in fields such as mathematics and coding, closely mimicking the deliberate reasoning of System 2 and showcasing human-like cognitive abilities. This survey begins with a brief overview of the progress in foundational LLMs and the early development of System 2 technologies, exploring how their combination has paved the way for reasoning LLMs. Next, we discuss how to construct reasoning LLMs, analyzing their features, the core methods enabling advanced reasoning, and the evolution of various reasoning LLMs. Additionally, we provide an overview of reasoning benchmarks, offering an in-depth comparison of the performance of representative reasoning LLMs. Finally, we explore promising directions for advancing reasoning LLMs and maintain a real-time GitHub Repository to track the latest developments. We hope this survey will serve as a valuable resource to inspire innovation and drive progress in this rapidly evolving field.
+                  </details>
+
+                  </p>
+                </td>
+              </tr>
+
+  
+                  <tr>
+                  <td style="padding:25px;width:35%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/branchlora.png' width="250">
+                    </div>
+                  </td>
+                  <td style="padding:25px;width:70%;vertical-align:middle">
+                    <a href="">
+                      <papertitle>Enhancing Multimodal Continual Instruction Tuning with BranchLoRA</papertitle>
+                    </a>
+                    <br /><br />
+                     Duzhen Zhang*,
+                     Yong Ren*,
+                    <strong>Zhong-Zhi Li</strong>,
+                    Yahan Yu,
+                    Jiahua Dong, 
+                    Chenxing Li,
+                    Zhilong Ji,
+                    Jinfeng Bai
+                    <br /><br />
+                    <strong>ACL2025</strong>
+                    <br>
+                    <a href="">Paper</a>&nbsp/&nbsp
+                    <a href="">Code</a>
+                    <details align="justify">
+                      <summary>
+                        Details
+                      </summary>
+                      Multimodal Continual Instruction Tuning (MCIT) aims to finetune Multimodal Large Language Models (MLLMs) to continually align with human intent across sequential tasks. Existing approaches often rely on the Mixture-of-Experts (MoE) LoRA framework to preserve previous instruction alignments. However, these methods are prone to Catastrophic Forgetting (CF), as they aggregate all LoRA blocks via simple summation, which compromises performance over time. In this paper, we identify a critical parameter inefficiency in the MoELoRA framework within the MCIT context. Based on this insight, we propose BranchLoRA, an asymmetric framework to enhance both efficiency and performance. To mitigate CF, we introduce a flexible tuning-freezing mechanism within BranchLoRA, enabling branches to specialize in intra-task knowledge while fostering inter-task collaboration. Moreover, we incrementally incorporate task-specific routers to ensure an optimal branch distribution over time, rather than favoring the most recent task. To streamline inference, we introduce a task selector that automatically routes test inputs to the appropriate router without requiring task identity. Extensive experiments with the latest MCIT benchmark demonstrate that BranchLoRA significantly outperforms MoELoRA. Additionally, BranchLoRA consistently shows its superiority when scaled to different MLLM backbones and sizes.
+                    </details>
+
+                    </p>
+                  </td>
+                </tr>
+
+
+              
+                  <tr>
+                  <td style="padding:25px;width:35%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/lans.png' width="250">
+                    </div>
+                  </td>
+                  <td style="padding:25px;width:70%;vertical-align:middle">
+                    <a href="">
+                      <papertitle>LANS: A Layout-Aware Neural Solver for Plane Geometry Problem</papertitle>
+                    </a>
+                    <br /><br />
+                    <strong>Zhong-Zhi Li*</strong>, 
+                    Ming-Liang Zhang*, 
+                    Fei Yin, 
+                    Cheng-Lin Liu
+                    <br /><br />
+<!--                     <strong>ACL2025, CCF-A, Main Conference, Long Paper</strong> -->
+                  <strong>ACL2024</strong>
+
+   
+                    <br>
+                    <a href="">Paper</a>&nbsp/&nbsp
+                    <a href="">Code</a>
+                    <details align="justify">
+                      <summary>
+                        Details
+                      </summary>
+                      Geometry problem solving (GPS) is a challenging mathematical reasoning task requiring multi-modal understanding, fusion, and reasoning. Existing neural solvers take GPS as a vision-language task but are short in the representation of geometry diagrams that carry rich and complex layout information. In this paper, we propose a layout-aware neural solver named LANS, integrated with two new modules: multimodal layout-aware pre-trained language module (MLA-PLM) and layout-aware fusion attention (LA-FA). MLA-PLM adopts structural-semantic pre-training (SSP) to implement global relationship modeling, and point-match pre-training (PMP) to achieve alignment between visual points and textual points. LA-FA employs a layout-aware attention mask to realize point-guided cross-modal fusion for further boosting layout awareness of LANS. Extensive experiments on datasets Geometry3K and PGPS9K validate the effectiveness of the layout-aware modules and superior problem-solving performance of our LANS solver, over existing symbolic and neural solvers.
+                    </details>
+
+                    </p>
+                  </td>
+                </tr>
+
+          
+                <tr>
+                  <td style="padding:25px;width:35%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/geoeval.png' width="250">
+                    </div>
+                  </td>
+                  <td style="padding:25px;width:70%;vertical-align:middle">
+                    <a href="">
+                      <papertitle>GeoEval: Benchmark for Evaluating LLMs and Multi-Modal Models on Geometry Problem-Solving</papertitle>
+                    </a>
+                    <br /><br />
+                    <strong>Zhong-Zhi Li*</strong>, 
+                    Jiaxin Zhang*,  
+                    Mingliang Zhang, 
+                    Fei Yin, 
+                    Chenglin Liu, 
+                    Yashar Moshfeghi
+                    <br /><br />
+<!--                     <strong>ACL2025, CCF-A, Main Conference, Long Paper</strong> -->
+                  <strong>ACL2024</strong>
+
+   
+                    <br>
+                    <a href="">Paper</a>&nbsp/&nbsp
+                    <a href="">Code</a>
+                    <details align="justify">
+                      <summary>
+                        Details
+                      </summary>
+                      Recent advancements in large language models (LLMs) and multi-modal models (MMs) have demonstrated their remarkable capabilities in problem-solving. Yet, their proficiency in tackling geometry math problems, which necessitates an integrated understanding of both textual and visual information, has not been thoroughly evaluated. To address this gap, we introduce the GeoEval benchmark, a comprehensive collection that includes a main subset of 2,000 problems, a 750 problems subset focusing on backward reasoning, an augmented subset of 2,000 problems, and a hard subset of 300 problems. This benchmark facilitates a deeper investigation into the performance of LLMs and MMs in solving geometry math problems. Our evaluation of ten LLMs and MMs across these varied subsets reveals that the WizardMath model excels, achieving a 55.67\% accuracy rate on the main subset but only a 6.00\% accuracy on the hard subset. This highlights the critical need for testing models against datasets on which they have not been pre-trained. Additionally, our findings indicate that GPT-series models perform more effectively on problems they have rephrased, suggesting a promising method for enhancing model capabilities.
+                    </details>
+
+                    </p>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td style="padding:25px;width:35%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/cmmath_2.png' width="250">
+                    </div>
+                  </td>
+                  <td style="padding:25px;width:70%;vertical-align:middle">
+                    <a href="">
+                      <papertitle>CMMaTH: A Chinese Multi-modal Math Skill Evaluation Benchmark for Foundation Models</papertitle>
+                    </a>
+                    <br /><br />
+                    <strong>Zhongzhi Li</strong>, 
+                    Ming-Liang Zhang, 
+                    Fei Yin, 
+                    Zhi-Long Ji, 
+                    Jin-Feng Bai, 
+                    Zhen-Ru Pan, 
+                    Fan-Hu Zeng, 
+                    Jian Xu, 
+                    Jia-Xin Zhang, 
+                    Cheng-Lin Liu
+                    <br /><br />
+                  <strong>COLING2025</strong>
+
+   
+                    <br>
+                    <a href="">Paper</a>&nbsp/&nbsp
+                    <a href="">Code</a>
+                    <details align="justify">
+                      <summary>
+                        Details
+                      </summary>
+                      Due to the rapid advancements in multimodal large language models, evaluating their multimodal mathematical capabilities continues to receive wide attention. Despite the datasets like MathVista proposed benchmarks for assessing mathematical capabilities in multimodal scenarios, there is still a lack of corresponding evaluation tools and datasets for fine-grained assessment in the context of K12 education in Chinese language. To systematically evaluate the capability of multimodal large models in solving Chinese multimodal mathematical problems, we propose a Chinese Multi-modal Math Skill Evaluation Benchmark, named CMMaTH, contraining 23k multimodal K12 math related questions, forming the largest Chinese multimodal mathematical problem benchmark to date. CMMaTH questions from elementary to high school levels, provide increased diversity in problem types, solution objectives, visual elements, detailed knowledge points, and standard solution annotations. We have constructed an open-source tool GradeGPT integrated with the CMMaTH dataset, facilitating stable, rapid, and cost-free model evaluation. Our data and code are available.
+                    </details>
+
+                    </p>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td style="padding:25px;width:35%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/redstar.png' width="250">
+                    </div>
+                  </td>
+                  <td style="padding:25px;width:70%;vertical-align:middle">
+                    <a href="">
+                      <papertitle>RedStar: Does Scaling Long-CoT Data Unlock Better Slow-Reasoning Systems?</papertitle>
+                    </a>
+                    <br /><br />
+                    Main Contirbuter
+                    <br /><br />
+                  <strong>Tech Report</strong>
+
+   
+                    <br>
+                    <a href="">Paper</a>&nbsp/&nbsp
+                    <a href="">Code</a>
+                    <details align="justify">
+                      <summary>
+                        Details
+                      </summary>
+                      Recent advancements in large language models (LLMs) and multi-modal models (MMs) have demonstrated their remarkable capabilities in problem-solving. Yet, their proficiency in tackling geometry math problems, which necessitates an integrated understanding of both textual and visual information, has not been thoroughly evaluated. To address this gap, we introduce the GeoEval benchmark, a comprehensive collection that includes a main subset of 2,000 problems, a 750 problems subset focusing on backward reasoning, an augmented subset of 2,000 problems, and a hard subset of 300 problems. This benchmark facilitates a deeper investigation into the performance of LLMs and MMs in solving geometry math problems. Our evaluation of ten LLMs and MMs across these varied subsets reveals that the WizardMath model excels, achieving a 55.67\% accuracy rate on the main subset but only a 6.00\% accuracy on the hard subset. This highlights the critical need for testing models against datasets on which they have not been pre-trained. Additionally, our findings indicate that GPT-series models perform more effectively on problems they have rephrased, suggesting a promising method for enhancing model capabilities.
+                    </details>
+
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding:25px;width:35%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/fuse_and_verify.png' width="250">
+                    </div>
+                  </td>
+                  <td style="padding:25px;width:70%;vertical-align:middle">
+                    <a href="">
+                      <papertitle>Fuse, Reason and Verify: Geometry Problem Solving with Parsed Clauses from Diagram</papertitle>
+                    </a>
+                    <br /><br />
+                    Ming-Liang Zhang, 
+                    <strong>Zhong-Zhi Li</strong>, 
+                    Fei Yin, 
+                    Liang Lin, 
+                    Cheng-Lin Liu
+                    <br /><br />
+                  <strong>Preprint Under Review.</strong>
+
+   
+                    <br>
+                    <a href="">Paper</a>&nbsp/&nbsp
+                    <a href="">Code</a>
+                    <details align="justify">
+                      <summary>
+                        Details
+                      </summary>
+                     Geometry problem solving (GPS) requires capacities of multi-modal understanding, multi-hop reasoning and theorem knowledge application. In this paper, we propose a neural-symbolic model for plane geometry problem solving (PGPS), named PGPSNet-v2, with three key steps: modal fusion, reasoning process and knowledge verification. In modal fusion, we leverage textual clauses to express fine-grained structural and semantic content of geometry diagram, and fuse diagram with textual problem efficiently through structural-semantic pre-training. For reasoning, we design an explicable solution program to describe the geometric reasoning process, and employ a self-limited decoder to generate solution program autoregressively. To reduce solution errors, a multi-level theorem verifier is proposed to eliminate solutions that do not match geometric principles, alleviating the hallucination of the neural model. We also construct a large-scale geometry problem dataset called PGPS9K, containing fine-grained annotations of textual clauses, solution program and involved knowledge tuples. Extensive experiments on datasets Geometry3K and PGPS9K show that our PGPSNet solver outperforms existing symbolic and neural solvers in GPS performance, while maintaining good explainability and reliability, and the solver components (fusion, reasoning, verification) are all justified effective.
+                    </details>
+
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding:25px;width:35%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/safe_lrm_survey.png' width="250">
+                    </div>
+                  </td>
+                  <td style="padding:25px;width:70%;vertical-align:middle">
+                    <a href="">
+                      <papertitle>Safety in Large Reasoning Models: A Survey</papertitle>
+                    </a>
+                    <br /><br />
+                    Cheng Wang, 
+                    Yue Liu, 
+                    Baolong Bi, 
+                    Duzhen Zhang, 
+                    <strong>Zhongzhi Li</strong>, 
+                    Junfeng Fang, 
+                    Bryan Hooi
+                    <br /><br />
+                  <strong>Preprint Under Review.</strong>
+
+   
+                    <br>
+                    <a href="">Paper</a>&nbsp/&nbsp
+                    <a href="">Code</a>
+                    <details align="justify">
+                      <summary>
+                        Details
+                      </summary>
+                      Large Reasoning Models (LRMs) have exhibited extraordinary prowess in tasks like mathematics and coding, leveraging their advanced reasoning capabilities. Nevertheless, as these capabilities progress, significant concerns regarding their vulnerabilities and safety have arisen, which can pose challenges to their deployment and application in real-world settings. This paper presents a comprehensive survey of LRMs, meticulously exploring and summarizing the newly emerged safety risks, attacks, and defense strategies. By organizing these elements into a detailed taxonomy, this work aims to offer a clear and structured understanding of the current safety landscape of LRMs, facilitating future research and development to enhance the security and reliability of these powerful models.
+                    </details>
+
+                    </p>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td style="padding:25px;width:35%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/lifelongagentbench.png' width="250">
+                    </div>
+                  </td>
+                  <td style="padding:25px;width:70%;vertical-align:middle">
+                    <a href="">
+                      <papertitle>LifelongAgentBench: Evaluating LLM Agents as Lifelong Learners</papertitle>
+                    </a>
+                    <br /><br />
+                    Junhao Zheng, 
+                    Xidi Cai, 
+                    Qiuke Li, 
+                    Duzhen Zhang, 
+                    <strong>ZhongZhi Li</strong>, 
+                    Yingying Zhang, 
+                    Le Song, 
+                    Qianli Ma
+                    <br /><br />
+                  <strong>Preprint Under Review.</strong>
+
+   
+                    <br>
+                    <a href="https://arxiv.org/abs/2505.11942">Paper</a>&nbsp/&nbsp
+                    <a href="https://github.com/caixd-220529/LifelongAgentBench">Code</a>
+                    <details align="justify">
+                      <summary>
+                        Details
+                      </summary>
+                      Lifelong learning is essential for intelligent agents operating in dynamic environments. Current large language model (LLM)-based agents, however, remain stateless and unable to accumulate or transfer knowledge over time. Existing benchmarks treat agents as static systems and fail to evaluate lifelong learning capabilities. We present LifelongAgentBench, the first unified benchmark designed to systematically assess the lifelong learning ability of LLM agents. It provides skill-grounded, interdependent tasks across three interactive environments, Database, Operating System, and Knowledge Graph, with automatic label verification, reproducibility, and modular extensibility. Extensive experiments reveal that conventional experience replay has limited effectiveness for LLM agents due to irrelevant information and context length constraints. We further introduce a group self-consistency mechanism that significantly improves lifelong learning performance. We hope LifelongAgentBench will advance the development of adaptive, memory-capable LLM agents.
+                    </details>
+
+                    </p>
+                  </td>
+                </tr>
+            </tbody>
+          </table> 
+
+
+
+
+
+        <script>
+          function toggleVisibility(categoryId) {
+            const categories = ['categoryA', 'categoryB', 'categoryC'];
+            categories.forEach(function (id) {
+              const content = document.getElementById(id);
+              if (id === categoryId) {
+                content.classList.remove('collapsed');
+              } else {
+                content.classList.add('collapsed');
+              }
+            });
+          }
+
+          // By default, show category A
+          document.getElementById('categoryA').classList.remove('collapsed');
+        </script>
+
+
+        <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Services</heading>
+                <p align="justify"><strong>Conference Reviewers</strong>: CVPR2022, ACL2025, KDD2025 EMNLP2025, ICCV2025</p>
+                <p align="justify"><strong>Journal Reviewers</strong>: Pattern Recognition, IEEE TMM</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+  <br>
+  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=1tL1IHB5BmEqgoEBM8X5vFdNXJYjKFXvLVb3Ic3g0BY&cl=ffffff&w=a"></script>
+<!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=1tL1IHB5BmEqgoEBM8X5vFdNXJYjKFXvLVb3Ic3g0BY"></script> -->
+
+          <br />
+<br />
+<a href="https://visitorbadge.io/status?path=bladedancer957.github.io">
+  <img
+    src="https://api.visitorbadge.io/api/visitors?path=bladedancer957.github.io&labelColor=%23dce775&countColor=%23263759&style=flat" />
+</a>
+<p align="left">
+  <font size="2"><a href="https://people.eecs.berkeley.edu/~barron/">Website template</a> </font><br />
+   <font size="2">Last updated: May 2025</font>
+</p>
+
+
+
+        </td>
+      </tr>
+
+
+  </table>
 </body>
+
 </html>
